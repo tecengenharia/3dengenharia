@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Engenharia e Projetos Ltda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset e tipografia */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: url('plano_de_fundo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Header */
+    header {
+      background: rgba(44,44,44,0.9);
+      text-align: center;
+      padding: 40px 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    }
+
+    header img {
+      height: 70px;
+      margin-bottom: 15px;
+    }
+
+    header h1 {
+      font-size: 2.2em;
+      margin-bottom: 10px;
+      color: #f5f5f5;
+    }
+
+    header p {
+      font-size: 1.1em;
+      color: #cccccc;
+    }
+
+    /* Nav */
+    nav {
+      background: #333333;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      gap: 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      font-weight: 600;
+      padding: 8px 12px;
+      transition: all 0.3s;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background: #555555;
+    }
+
+    /* Sections */
+    section {
+      max-width: 1000px;
+      margin: 50px auto;
+      background: rgba(44,44,44,0.95);
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+    }
+
+    h2 {
+      color: #f5f5f5;
+      margin-bottom: 20px;
+      font-size: 1.8em;
+      border-left: 5px solid #ff8c00;
+      padding-left: 10px;
+    }
+
+    p {
+      color: #d0d0d0;
+      margin-bottom: 20px;
+    }
+
+    /* Serviços com ícones */
+    .servicos-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .servico {
+      background: #3a3a3a;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .servico:hover {
+      background: #505050;
+      transform: translateY(-5px);
+    }
+
+    .servico-icon {
+      font-size: 40px;
+      margin-bottom: 15px;
+      color: #ff8c00;
+    }
+
+    .servico h3 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    /* Contato */
+    #contato p {
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 25px 20px;
+      background: #222222;
+      color: #aaa;
+      border-top: 2px solid #ff8c00;
+      margin-top: 50px;
+    }
+
+    /* Form */
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: none;
+      background: #444444;
+      color: #f0f0f0;
+    }
+
+    form button {
+      background: #ff8c00;
+      color: #1e1e1e;
+      font-weight: 600;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    form button:hover {
+      background: #e67600;
+    }
+
+    /* Ícones (usando emojis como exemplo simples) */
+    .icon-concreto::before { content: "🏗️"; }
+    .icon-arquitetura::before { content: "📐"; }
+    .icon-laudo::before { content: "📝"; }
+    .icon-fundacoes::before { content: "⚒️"; }
+    .icon-estudos::before { content: "📊"; }
+    .icon-bim::before { content: "🖥️"; }
+    .icon-consultoria::before { content: "🔍"; }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.jpg" alt="3D Engenharia e Projetos">
+    <h1>3D Engenharia e Projetos Ltda</h1>
+    <p>Projetos e Cálculos Estruturais de Concreto Armado e Protendido, Estruturas Metálicas, Perícias em Recuperação e Reforço Estrutural</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="sobre">
+    <h2>Sobre a Empresa</h2>
+    <p>A 3D Engenharia e Projetos Ltda atua no desenvolvimento de projetos e cálculos estruturais detalhados, abrangendo concreto armado e protendido, estruturas metálicas, perícias técnicas em recuperação e reforço estrutural. Nossa equipe combina conhecimento técnico avançado e experiência prática, garantindo segurança, eficiência e confiabilidade em todas as fases do projeto.</p>
+  </section>
+
+  <section id="servicos">
+    <h2>Serviços</h2>
+    <div class="servicos-list">
+      <div class="servico">
+        <div class="servico-icon icon-concreto"></div>
+        <h3>Projetos Estruturais</h3>
+        <p>Concreto armado, protendido e estruturas metálicas de diversos portes.</p>
+      </div>
+      <div class="servico">
+        <div class="servico-icon icon-arquitetura"></div>
+        <h3>Compatibilização de Projetos</h3>
+        <p>Integração de projetos estruturais com arquitetônicos e multidisciplinares.</p>
+      </div>
+      <div class="servico">
+        <div class="servico-icon icon-laudo"></div>
+        <h3>Perícias e Laudos</h3>
+        <p>Análises estruturais, recuperação de estruturas e reforços necessários.</p>
+      </div>
+      <div class="servico">
+        <div class="servico-icon icon-fundacoes"></div>
+        <h3>Fundações e Contenções</h3>
+        <p>Projetos de fundações profundas, rasas e estruturas especiais.</p>
+      </div>
+      <div class="servico">
+        <div class="servico-icon icon-estudos"></div>
+        <h3>Estudos de Viabilidade</h3>
+        <p>Otimização de materiais, custos e desempenho estrutural.</p>
+      </div>
+      <div class="servico">
+        <div class="servico-icon icon-bim"></div>
+        <h3>Modelagem BIM</h3>
+        <p>Detalhamento executivo e integração multidisciplinar em plataforma BIM.</p>
+      </div>
+      <div class="servico">
+        <div class="servico-icon icon-consultoria"></div>
+        <h3>Consultoria Técnica</h3>
+        <p>Orientação normativa e soluções técnicas avançadas para reforço estrutural.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Email: projetos@3engenharia.com.br</p>
+    <p>WhatsApp: (16) 99644-6868</p>
+    <p>Endereço: Rua Dr. Paulo Tinoco Cabral nº 603 - Sala 07 - Ribeirão Preto - SP</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 3D Engenharia e Projetos Ltda. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
